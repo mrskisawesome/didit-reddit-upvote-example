@@ -51,7 +51,7 @@ export async function Vote({ postId, votes }) {
     revalidatePath("/");
     revalidatePath(`/post/${postId}`);
   }
-
+  //FK makes addition to VoteButtons to pass the votes to the component as props
   return (
     <>
       {votes} votes
